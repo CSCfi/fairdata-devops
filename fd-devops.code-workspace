@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/CVS": true,
+			"**/.DS_Store": true,
+			"_site": true,
+			".jekyll-cache": true,
+			".vscode": true,
+			".favorites.json": true,
+			"*.code-workspace": true,
+			"*.lock": true
+		},
+		"explorerExclude.backup": null
+	}
+}

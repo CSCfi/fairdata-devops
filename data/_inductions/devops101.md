@@ -1,3 +1,7 @@
+---
+session: Devops 101
+---
+
 # What is devops?
 
 * Developer Operations
