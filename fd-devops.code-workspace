@@ -15,9 +15,10 @@
 			".jekyll-cache": true,
 			".vscode": true,
 			".favorites.json": true,
-			"*.code-workspace": true,
+			"*.code-workspace": false,
 			"*.lock": true
 		},
-		"explorerExclude.backup": null
+		"explorerExclude.backup": null,
+		"gitlab.instanceUrl": "https://gitlab.ci.csc.fi"
 	}
 }
