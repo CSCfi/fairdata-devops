@@ -2,8 +2,10 @@
 layout: default
 title: induction sessions
 ---
-<div>
+<div class="container">
+
 {% for induction in site.inductions %}
-    <p><a href="{{ induction.url }}">{{ induction.session }}</a></h1></div></p>
+    <p><a href="{{ induction.url }}">{{ induction.session }}</a></h1></p>
 {% endfor %}
+
 </div>
