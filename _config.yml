@@ -61,7 +61,7 @@ exclude:
   - fd-devops.code-workspace
   - .vscode/
   - .gitignore
-  - terraform/
+  - ops/
   - files/
 #   - .sass-cache/
 #   - .jekyll-cache/
