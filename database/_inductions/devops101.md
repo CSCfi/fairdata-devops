@@ -1,5 +1,7 @@
 ---
-session: Devops 101
+author:
+  name: Toni Nurmi
+title: "Devops 101"
 ---
 
 # What is devops?

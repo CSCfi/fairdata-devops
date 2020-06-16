@@ -1,5 +1,7 @@
 ---
-session: IDE, Environment and Tools
+author:
+  name: Toni Nurmi
+title: "IDE, Environment and Tools"
 ---
 
 # Kehitysympäristöt ja työkalut
