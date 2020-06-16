@@ -1,0 +1,86 @@
+---
+layout: page
+---
+<h1>{{ page.instance-name}} </h1>
+<p>{{page.description}}</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Environment</th>
+      <th scope="col">Service</th>
+      <th scope="col">Type</th>
+      <th scope="col">Group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"> {{page.environment}}</th>
+      <td>{{ page.service }}</td>
+      <td>{{ page.type }}</td>
+      <td>{{ page.group }}</td>
+    </tr>
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ip address</th>
+      <th scope="col">floating</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for ip in page.ip-addresses %}
+      <tr>
+        <td>{{ ip.ip }}</td>
+        <td>{{ ip.floating }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% if page.dns != nil%}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">dns names</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for dns in page.dns %}
+      <tr>
+        <td>{{ dns }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">user</th>
+      <th scope="col">sudo</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in page.users %}
+      <tr>
+        <td>{{ user.name }}</td>
+        <td>{{ user.sudo }}</td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">links</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for link in page.links %}
+      <tr>
+        <td><a href="{{ link.url }}">{{ link.name }}</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{{ content }}

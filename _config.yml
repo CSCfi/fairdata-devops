@@ -27,14 +27,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  https://github.com/orgs/CSCfi/teams/fairdata-adm
 
 # Build settings
-theme: minima
+theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
 
-collections_dir: data
+paginate: 10
+paginate_path: /page:num/
+
+collections_dir: database
 
 collections:
   inductions:
+    output: true
+  infra-resources:
     output: true
 
 defaults:
@@ -45,8 +53,20 @@ defaults:
       layout: induction
   - scope:
       path: ''
+      type: infra-resources
+    values:
+      layout: infra-resource
+  - scope:
+      path: "assets/img"
+    values: 
+      image: true
+  - scope:
+      path: ''
     values:
       layout: default
+
+sass:
+  sass_dir: assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default.

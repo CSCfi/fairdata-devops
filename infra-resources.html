@@ -1,0 +1,41 @@
+---
+layout: page
+title: infrastructure
+---
+<div class>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">service</th>
+      <th scope="col">type / group</th>
+      <th scope="col">instance name</th>
+      <th scope="col">dns</th>
+      <th scope="col">ip</th>
+      <th scope="col">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign ordered_resources = site.infra-resources | sort: 'service' %}
+     {% for resource in ordered_resources %}
+        {% assign ip-address = resource.ip-addresses | where: 'floating', true | first %}
+        {% assign shield-img = "floating-ip-yes-red.svg" %}
+        {% if ip-address==nil %}
+            {% assign ip-address = resource.ip-addresses | first %}
+            {% assign shield-img = "floating-ip-no-blue.svg" %}
+        {% endif %}
+        <tr>
+            <td>{{ resource.service }}</td>
+            <td>{{ resource.type }} {{ resource.group }}</td>
+            <td><a href="{{ resource.url }}">{{ resource.instance-name }}</a></td>
+            {% assign first_dns = resource.dns | first %}
+            <td>{{ first_dns }}</td>
+            <td class="row">
+              <dt class="col-6"><code>{{ ip-address.ip}}</code></dt>
+              <dt class="col-6"><img src="{{site.baseurl}}/assets/img/{{shield-img}}"></dt>
+             </td>
+            <td>{{ resource.description }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>

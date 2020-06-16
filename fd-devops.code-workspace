@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../../../../.rvm/gems/ruby-2.6.3/gems/jekyll-theme-basically-basic-1.4.4"
 		}
 	],
 	"settings": {
@@ -16,7 +19,8 @@
 			".vscode": true,
 			".favorites.json": true,
 			"*.code-workspace": false,
-			"*.lock": true
+			"*.lock": true,
+			".sass-cache": true
 		},
 		"explorerExclude.backup": null,
 		"gitlab.instanceUrl": "https://gitlab.ci.csc.fi"

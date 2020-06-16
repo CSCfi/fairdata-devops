@@ -1,5 +1,7 @@
 ---
-session: cPouta and Terraform
+author:
+  name: Toni Nurmi
+title: "cPouta and Terraform"
 ---
 
 ## cPouta
