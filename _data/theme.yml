@@ -21,5 +21,7 @@ google_fonts:
     weights: "400,400i,600,600i"
   - name: "Fira Sans Condensed"
 navigation_pages:
-  - inductions.md
-  - README.md
+  - index.markdown
+  - infra-resources.html
+  - inductions.html
+  - internal-changelog.html
