@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fairdata GitOps 0.1.0
+title: Fairdata GitOps 0.1.1
 email: fair-adm@csc.fi
 description: >- # this means to ignore newlines until "baseurl:"
   Fairdata Devops Ultimate Source Of Truth
@@ -30,12 +30,10 @@ github_username:  https://github.com/orgs/CSCfi/teams/fairdata-adm
 theme: jekyll-theme-basically-basic
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-paginate
+  # - jekyll-paginate
 
-paginate: 10
-paginate_path: /page:num/
+# paginate: 10
+# paginate_path: /page:num/
 
 collections_dir: database
 
@@ -43,6 +41,8 @@ collections:
   inductions:
     output: true
   infra-resources:
+    output: true
+  logs:
     output: true
 
 defaults:
@@ -57,16 +57,14 @@ defaults:
     values:
       layout: infra-resource
   - scope:
+      path: ''
+      type: logs
+    values:
+      layout: log
+  - scope:
       path: "assets/img"
     values: 
       image: true
-  - scope:
-      path: ''
-    values:
-      layout: default
-
-sass:
-  sass_dir: assets/css
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -83,8 +81,8 @@ exclude:
   - .gitignore
   - ops/
   - files/
-#   - .sass-cache/
-#   - .jekyll-cache/
+  - .sass-cache/
+  - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
