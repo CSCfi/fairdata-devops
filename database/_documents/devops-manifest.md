@@ -13,20 +13,36 @@ Devops is not universally agreed definition. Everyone can have different views o
 
 ### Process development
 
-Developer Operations is fancy term for process development. This is true for all operations, such as CI, CD, documentation, testing, provisioning and monitoring. When you develop automation around releases or policies on provisioning, those are processes your evaluating. Process is a process even if its not called that, or no-one admits it. The output of such development is a new process, even if personnel involved don't recognize it as such.
-Process is a set of inputs, steps and outputs to archieve agreed goal. You can develop most awesome tool, but without a process, there is no adoption and no business value.
+Developer Operations is fancy term for process development. This is true for all operations, such as: 
+
+* CI, 
+* CD, 
+* documentation, 
+* testing, 
+* provisioning and 
+* monitoring. 
+
+When you develop automation around releases or policies on provisioning, those are processes your evaluating. Process is a process even if its not called that, or no-one admits it. The output of such development is a new process, even if personnel involved don't recognize it as such.
+**Process is a set of inputs, steps and outputs to archieve agreed goal.** You can develop most awesome tool, but without a process, there is no adoption and no business value.
 
 ### Customer service of product development teams
 
-Product development is intense, feature focused work with ever looming deadlines. Client or Product Owner will prioritize most of the work in product development. Developers usually have many pains they live with because they don't have time to remedy them. Sources of frustration can be cumbersome release process, lacking documentation, local development environment is too heavy or does not work, peer evaluation is minimal or does not enforce learning, tests have blind spots and there is no clear way of archieving something to name a few. 
+Product development is intense, feature focused work with ever looming deadlines. Client or Product Owner will prioritize most of the work in product development. Developers usually have many pains they live with because they don't have time to remedy them. Sources of frustration can be: 
+
+* cumbersome release process, 
+* lacking documentation, 
+* local development environment is too heavy or does not work, 
+* peer evaluation is minimal or does not enforce learning, 
+* tests have blind spots and 
+* there is no clear way of archieving something. 
 
 Devops operator on the otherhand does not have such limitations what comes to deadlines and priorization. Operator can ideally observe product development, identify pains and cumbersome workflows, improve documentation and testing and help with complex topics outside of feature development. 
 
-Operator should have good understanging of products and their source code, business goals and internal procedures to archieve these goals. They can do simple fixes, tests, setup monitoring and combine different components better. Because of this knowledge, operator can easily be pulled inside product development team full time, and doing so applies all the limitations of product developer to themself. Operator on such case looses most of their observational abilities and time to develop new tools and processes.
+Operator should have good understanging of products and their source code, business goals and internal procedures to archieve these goals. They can do simple fixes, tests, setup monitoring and combine different components better. Because of this knowledge, operator can easily be pulled inside product development team full time, and doing so applies all the limitations of product developer to themself. Operator on such case loses most of their observational abilities and time to develop new tools and processes.
 
 ### Enchanting components vs Enabling components
 
-Product development goals are to develop and maintain business critical components. Business critical components are enabling components. Without them there is no product, no users and no client. Enchanting components bring added value to customers, users and developers, but usually in a way that users or client can't see directly. That is why they are usually prioritized on the bottom of the stack or not at all, because clients and users don't see the improvement and they of course set the priorization of the product in the end.
+Product development goals are to develop and maintain business critical components. **Business critical components are enabling components.** Without them there is no product, no users and no client. Enchanting components bring added value to customers, users and developers, but usually in a way that users or client can't see directly. That is why they are usually prioritized on the bottom of the stack or not at all, because clients and users don't see the improvement and they of course set the priorization of the product in the end.
 
 Operator is best utilized taking responsibility of enchanting components, developing enabling components is the same as product development. 
 
