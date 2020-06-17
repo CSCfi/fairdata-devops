@@ -1,4 +1,10 @@
-# Devops Manifest
+---
+title: Devops manifest
+layout: page
+status: draft
+owner: Toni Nurmi
+updated: 2020-06-17
+---
 
 Devops is not universally agreed definition. Everyone can have different views on what is and isn't included in Devops. This document outlines what FD Devops team considers good practises, scopes and methology of Devops inside Fairdata. Its our very own manifest of devops and the ultimate guide on all matters related to our daily work.
 

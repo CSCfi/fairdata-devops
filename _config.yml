@@ -44,6 +44,8 @@ collections:
     output: true
   logs:
     output: true
+  documents:
+    output: true
 
 defaults:
   - scope:
