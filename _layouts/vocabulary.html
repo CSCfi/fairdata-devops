@@ -1,0 +1,11 @@
+---
+layout: page
+---
+{% for def in page.definitions %}
+<blockquote class="blockquote">
+<h3>{{def.term}}</h3>
+<p class="mb-0">{{def.definition}}</p>
+<footer class="blockquote-footer"><cite>{{def.source}}</cite></footer>
+</blockquote>
+{% endfor %}
+
