@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fairdata GitOps 0.1.2
+title: Fairdata GitOps 0.1.3
 email: fair-adm@csc.fi
 description: >- # this means to ignore newlines until "baseurl:"
   Fairdata Devops Ultimate Source Of Truth
@@ -46,6 +46,8 @@ collections:
     output: true
   documents:
     output: true
+  vocabularies: 
+    output: true
 
 defaults:
   - scope:
@@ -63,6 +65,11 @@ defaults:
       type: logs
     values:
       layout: log
+  - scope:
+      path: ''
+      type: vocabularies
+    values:
+      layout: vocabulary
   - scope:
       path: "assets/img"
     values: 
