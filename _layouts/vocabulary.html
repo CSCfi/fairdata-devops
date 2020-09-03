@@ -7,5 +7,24 @@ layout: page
 <p class="mb-0">{{def.definition}}</p>
 <footer class="blockquote-footer"><cite>{{def.source}}</cite></footer>
 </blockquote>
+    {% if def.notes != nil %}
+    notes: <ul>
+    {% endif%}
+    {% for note in def.notes %}
+    <li>{{note}}</li>
+    {% endfor%}
+    {% if def.notes != nil %}
+    </ul>
+    {% endif %}
+    {% if def.synonyms != nil %}
+    synonyms: <ul>
+    {% endif %}
+    {% for synonym in def.synonyms%}
+    <li>{{synonym}}</li>
+    {% endfor%}
+    {% if def.synonyms != nil %}
+    </ul>
+    {% endif%}
 {% endfor %}
 
+{{ content  }}

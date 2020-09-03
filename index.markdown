@@ -4,7 +4,3 @@
 
 layout: home
 ---
-## Welcome
-
-This repository defines everything needed for Fairdata Devops work
-
